@@ -33,6 +33,7 @@
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.TxtConfirmPassword = new System.Windows.Forms.TextBox();
             this.PnlRegistration = new System.Windows.Forms.Panel();
+            this.LblMail = new System.Windows.Forms.Label();
             this.LblNoInfo = new System.Windows.Forms.Label();
             this.LblError = new System.Windows.Forms.Label();
             this.BttRegister = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@
             this.PnlRight = new System.Windows.Forms.Panel();
             this.PnlLeft = new System.Windows.Forms.Panel();
             this.PnlBottom = new System.Windows.Forms.Panel();
-            this.LblMail = new System.Windows.Forms.Label();
             this.PnlRegistration.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,6 +120,18 @@
             this.PnlRegistration.Name = "PnlRegistration";
             this.PnlRegistration.Size = new System.Drawing.Size(746, 886);
             this.PnlRegistration.TabIndex = 6;
+            // 
+            // LblMail
+            // 
+            this.LblMail.AutoSize = true;
+            this.LblMail.BackColor = System.Drawing.Color.Red;
+            this.LblMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMail.ForeColor = System.Drawing.Color.Black;
+            this.LblMail.Location = new System.Drawing.Point(267, 406);
+            this.LblMail.Name = "LblMail";
+            this.LblMail.Size = new System.Drawing.Size(192, 33);
+            this.LblMail.TabIndex = 10;
+            this.LblMail.Text = "Invalid E-mail";
             // 
             // LblNoInfo
             // 
@@ -210,18 +222,6 @@
             this.PnlBottom.Name = "PnlBottom";
             this.PnlBottom.Size = new System.Drawing.Size(346, 175);
             this.PnlBottom.TabIndex = 9;
-            // 
-            // LblMail
-            // 
-            this.LblMail.AutoSize = true;
-            this.LblMail.BackColor = System.Drawing.Color.Red;
-            this.LblMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblMail.ForeColor = System.Drawing.Color.Black;
-            this.LblMail.Location = new System.Drawing.Point(265, 406);
-            this.LblMail.Name = "LblMail";
-            this.LblMail.Size = new System.Drawing.Size(213, 33);
-            this.LblMail.TabIndex = 10;
-            this.LblMail.Text = "Correo Invalido";
             // 
             // FrmRegistration
             // 
