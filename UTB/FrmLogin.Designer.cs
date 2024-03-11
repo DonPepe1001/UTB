@@ -41,16 +41,16 @@
             // PctLogoLogin
             // 
             this.PctLogoLogin.Image = ((System.Drawing.Image)(resources.GetObject("PctLogoLogin.Image")));
-            this.PctLogoLogin.Location = new System.Drawing.Point(199, 129);
+            this.PctLogoLogin.Location = new System.Drawing.Point(152, 74);
             this.PctLogoLogin.Name = "PctLogoLogin";
-            this.PctLogoLogin.Size = new System.Drawing.Size(350, 350);
+            this.PctLogoLogin.Size = new System.Drawing.Size(450, 450);
             this.PctLogoLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PctLogoLogin.TabIndex = 0;
             this.PctLogoLogin.TabStop = false;
             // 
             // TxtUser
             // 
-            this.TxtUser.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.TxtUser.BackColor = System.Drawing.Color.White;
             this.TxtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtUser.ForeColor = System.Drawing.SystemColors.ScrollBar;
@@ -66,7 +66,7 @@
             // 
             // TxtPassword
             // 
-            this.TxtPassword.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.TxtPassword.BackColor = System.Drawing.Color.White;
             this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPassword.ForeColor = System.Drawing.SystemColors.ScrollBar;
@@ -85,10 +85,10 @@
             this.BttLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.BttLogin.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.BttLogin.BackColor = System.Drawing.Color.White;
             this.BttLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BttLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BttLogin.ForeColor = System.Drawing.Color.White;
+            this.BttLogin.ForeColor = System.Drawing.Color.Black;
             this.BttLogin.Location = new System.Drawing.Point(335, 709);
             this.BttLogin.Name = "BttLogin";
             this.BttLogin.Size = new System.Drawing.Size(75, 35);
@@ -103,7 +103,7 @@
             this.LblError.BackColor = System.Drawing.Color.Red;
             this.LblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblError.ForeColor = System.Drawing.Color.Black;
-            this.LblError.Location = new System.Drawing.Point(145, 628);
+            this.LblError.Location = new System.Drawing.Point(148, 628);
             this.LblError.Name = "LblError";
             this.LblError.Size = new System.Drawing.Size(449, 37);
             this.LblError.TabIndex = 4;
@@ -126,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(49)))), ((int)(((byte)(89)))));
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(762, 1100);
             this.Controls.Add(this.LblRegister);

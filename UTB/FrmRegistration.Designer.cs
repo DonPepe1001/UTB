@@ -33,19 +33,20 @@
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.TxtConfirmPassword = new System.Windows.Forms.TextBox();
             this.PnlRegistration = new System.Windows.Forms.Panel();
+            this.LblNoInfo = new System.Windows.Forms.Label();
+            this.LblError = new System.Windows.Forms.Label();
+            this.BttRegister = new System.Windows.Forms.Button();
+            this.BttReturn = new System.Windows.Forms.Button();
             this.TxtEmail = new System.Windows.Forms.TextBox();
             this.PnlRight = new System.Windows.Forms.Panel();
             this.PnlLeft = new System.Windows.Forms.Panel();
             this.PnlBottom = new System.Windows.Forms.Panel();
-            this.BttReturn = new System.Windows.Forms.Button();
-            this.BttRegister = new System.Windows.Forms.Button();
-            this.LblError = new System.Windows.Forms.Label();
-            this.LblNoInfo = new System.Windows.Forms.Label();
             this.PnlRegistration.SuspendLayout();
             this.SuspendLayout();
             // 
             // LblRegister
             // 
+            this.LblRegister.BackColor = System.Drawing.Color.SteelBlue;
             this.LblRegister.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblRegister.ForeColor = System.Drawing.Color.White;
@@ -118,6 +119,54 @@
             this.PnlRegistration.Size = new System.Drawing.Size(746, 886);
             this.PnlRegistration.TabIndex = 6;
             // 
+            // LblNoInfo
+            // 
+            this.LblNoInfo.AutoSize = true;
+            this.LblNoInfo.BackColor = System.Drawing.Color.Red;
+            this.LblNoInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNoInfo.ForeColor = System.Drawing.Color.Black;
+            this.LblNoInfo.Location = new System.Drawing.Point(218, 406);
+            this.LblNoInfo.Name = "LblNoInfo";
+            this.LblNoInfo.Size = new System.Drawing.Size(312, 33);
+            this.LblNoInfo.TabIndex = 9;
+            this.LblNoInfo.Text = "Incomplete Information";
+            // 
+            // LblError
+            // 
+            this.LblError.AutoSize = true;
+            this.LblError.BackColor = System.Drawing.Color.Red;
+            this.LblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblError.ForeColor = System.Drawing.Color.Black;
+            this.LblError.Location = new System.Drawing.Point(206, 406);
+            this.LblError.Name = "LblError";
+            this.LblError.Size = new System.Drawing.Size(334, 33);
+            this.LblError.TabIndex = 8;
+            this.LblError.Text = "Passwords do not match";
+            // 
+            // BttRegister
+            // 
+            this.BttRegister.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.BttRegister.ForeColor = System.Drawing.Color.White;
+            this.BttRegister.Location = new System.Drawing.Point(465, 669);
+            this.BttRegister.Name = "BttRegister";
+            this.BttRegister.Size = new System.Drawing.Size(75, 36);
+            this.BttRegister.TabIndex = 7;
+            this.BttRegister.Text = "Register";
+            this.BttRegister.UseVisualStyleBackColor = false;
+            this.BttRegister.Click += new System.EventHandler(this.BttRegister_Click);
+            // 
+            // BttReturn
+            // 
+            this.BttReturn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.BttReturn.ForeColor = System.Drawing.Color.White;
+            this.BttReturn.Location = new System.Drawing.Point(207, 669);
+            this.BttReturn.Name = "BttReturn";
+            this.BttReturn.Size = new System.Drawing.Size(75, 36);
+            this.BttReturn.TabIndex = 6;
+            this.BttReturn.Text = "Back";
+            this.BttReturn.UseVisualStyleBackColor = false;
+            this.BttReturn.Click += new System.EventHandler(this.BttReturn_Click);
+            // 
             // TxtEmail
             // 
             this.TxtEmail.BackColor = System.Drawing.Color.White;
@@ -135,6 +184,7 @@
             // 
             // PnlRight
             // 
+            this.PnlRight.BackColor = System.Drawing.Color.SteelBlue;
             this.PnlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.PnlRight.Location = new System.Drawing.Point(546, 175);
             this.PnlRight.Name = "PnlRight";
@@ -143,6 +193,7 @@
             // 
             // PnlLeft
             // 
+            this.PnlLeft.BackColor = System.Drawing.Color.SteelBlue;
             this.PnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlLeft.Location = new System.Drawing.Point(0, 175);
             this.PnlLeft.Name = "PnlLeft";
@@ -151,59 +202,12 @@
             // 
             // PnlBottom
             // 
+            this.PnlBottom.BackColor = System.Drawing.Color.SteelBlue;
             this.PnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.PnlBottom.Location = new System.Drawing.Point(200, 886);
             this.PnlBottom.Name = "PnlBottom";
             this.PnlBottom.Size = new System.Drawing.Size(346, 175);
             this.PnlBottom.TabIndex = 9;
-            // 
-            // BttReturn
-            // 
-            this.BttReturn.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.BttReturn.ForeColor = System.Drawing.Color.White;
-            this.BttReturn.Location = new System.Drawing.Point(207, 669);
-            this.BttReturn.Name = "BttReturn";
-            this.BttReturn.Size = new System.Drawing.Size(75, 36);
-            this.BttReturn.TabIndex = 6;
-            this.BttReturn.Text = "Back";
-            this.BttReturn.UseVisualStyleBackColor = false;
-            this.BttReturn.Click += new System.EventHandler(this.BttReturn_Click);
-            // 
-            // BttRegister
-            // 
-            this.BttRegister.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.BttRegister.ForeColor = System.Drawing.Color.White;
-            this.BttRegister.Location = new System.Drawing.Point(465, 669);
-            this.BttRegister.Name = "BttRegister";
-            this.BttRegister.Size = new System.Drawing.Size(75, 36);
-            this.BttRegister.TabIndex = 7;
-            this.BttRegister.Text = "Register";
-            this.BttRegister.UseVisualStyleBackColor = false;
-            this.BttRegister.Click += new System.EventHandler(this.BttRegister_Click);
-            // 
-            // LblError
-            // 
-            this.LblError.AutoSize = true;
-            this.LblError.BackColor = System.Drawing.Color.Red;
-            this.LblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblError.ForeColor = System.Drawing.Color.Black;
-            this.LblError.Location = new System.Drawing.Point(206, 406);
-            this.LblError.Name = "LblError";
-            this.LblError.Size = new System.Drawing.Size(334, 33);
-            this.LblError.TabIndex = 8;
-            this.LblError.Text = "Passwords do not match";
-            // 
-            // LblNoInfo
-            // 
-            this.LblNoInfo.AutoSize = true;
-            this.LblNoInfo.BackColor = System.Drawing.Color.Red;
-            this.LblNoInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNoInfo.ForeColor = System.Drawing.Color.Black;
-            this.LblNoInfo.Location = new System.Drawing.Point(206, 406);
-            this.LblNoInfo.Name = "LblNoInfo";
-            this.LblNoInfo.Size = new System.Drawing.Size(312, 33);
-            this.LblNoInfo.TabIndex = 9;
-            this.LblNoInfo.Text = "Incomplete Information";
             // 
             // FrmRegistration
             // 

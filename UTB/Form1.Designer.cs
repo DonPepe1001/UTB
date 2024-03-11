@@ -48,7 +48,7 @@
             // PnlTopBar
             // 
             this.PnlTopBar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.PnlTopBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(49)))), ((int)(((byte)(89)))));
+            this.PnlTopBar.BackColor = System.Drawing.Color.SteelBlue;
             this.PnlTopBar.Controls.Add(this.BttClear);
             this.PnlTopBar.Controls.Add(this.PctLogoChat);
             this.PnlTopBar.Controls.Add(this.LblUsername);
@@ -76,9 +76,9 @@
             // PctLogoChat
             // 
             this.PctLogoChat.Image = ((System.Drawing.Image)(resources.GetObject("PctLogoChat.Image")));
-            this.PctLogoChat.Location = new System.Drawing.Point(12, 12);
+            this.PctLogoChat.Location = new System.Drawing.Point(-13, -38);
             this.PctLogoChat.Name = "PctLogoChat";
-            this.PctLogoChat.Size = new System.Drawing.Size(91, 91);
+            this.PctLogoChat.Size = new System.Drawing.Size(200, 200);
             this.PctLogoChat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PctLogoChat.TabIndex = 3;
             this.PctLogoChat.TabStop = false;
@@ -88,7 +88,7 @@
             this.LblUsername.AutoSize = true;
             this.LblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblUsername.ForeColor = System.Drawing.Color.White;
-            this.LblUsername.Location = new System.Drawing.Point(109, 42);
+            this.LblUsername.Location = new System.Drawing.Point(199, 42);
             this.LblUsername.Name = "LblUsername";
             this.LblUsername.Size = new System.Drawing.Size(0, 31);
             this.LblUsername.TabIndex = 4;
@@ -108,7 +108,7 @@
             // 
             // PnlMessage
             // 
-            this.PnlMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(49)))), ((int)(((byte)(89)))));
+            this.PnlMessage.BackColor = System.Drawing.Color.SteelBlue;
             this.PnlMessage.Controls.Add(this.BttSendMessage);
             this.PnlMessage.Controls.Add(this.TxtMessage);
             this.PnlMessage.Dock = System.Windows.Forms.DockStyle.Bottom;

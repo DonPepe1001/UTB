@@ -42,7 +42,7 @@ namespace UTB
                 LblNoInfo.Hide();
                 userInfo = false;
             }
-            if (TxtUsername.Text != string.Empty)
+            if (TxtUsername.Text != string.Empty && TxtUsername.Text != "username" && TxtEmail.Text != "e-mail" && TxtEmail.Text == string.Empty)
             {
                 userInfo = true;
             }
