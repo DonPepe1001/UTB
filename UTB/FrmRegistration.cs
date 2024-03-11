@@ -27,7 +27,6 @@ namespace UTB
         private async void BttRegister_Click(object sender, EventArgs e)
         {
             bool passwordMatch = false;
-            bool userInfo = false;
             if (TxtPassword.Text != TxtConfirmPassword.Text)
             {
                 LblError.Show();
@@ -40,17 +39,16 @@ namespace UTB
                 LblNoInfo.Show();
                 await Task.Delay(2000);
                 LblNoInfo.Hide();
-                userInfo = false;
             }
-            if (TxtUsername.Text != string.Empty && TxtUsername.Text != "username" && TxtEmail.Text != "e-mail" && TxtEmail.Text == string.Empty)
+            if (!this.TxtEmail.Text.Contains('@') || !this.TxtEmail.Text.Contains('.'))
             {
-                userInfo = true;
+                MessageBox.Show("Please Enter A Valid Email", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             if (TxtPassword.Text == TxtConfirmPassword.Text)
             {
                 passwordMatch = true;
             }
-            if (passwordMatch == true && userInfo == true)
+            if (passwordMatch == true && TxtUsername.Text != "username" && TxtUsername.Text != string.Empty && TxtEmail.Text != "e-mail" && TxtEmail.Text != string.Empty && this.TxtEmail.Text.Contains('@') && this.TxtEmail.Text.Contains('.'))
             {
                 FrmUTB frmUTB = new FrmUTB();
                 frmUTB.Username = Username;
@@ -65,7 +63,7 @@ namespace UTB
             {
                 TxtUsername.Text = string.Empty;
             }
-                        if (TxtEmail.Text == string.Empty)
+            if (TxtEmail.Text == string.Empty)
             {
                 TxtEmail.Text = "e-mail";
                 TxtEmail.ForeColor = Color.Gray;

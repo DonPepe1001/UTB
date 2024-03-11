@@ -42,7 +42,7 @@ namespace UTB
                 TxtPassword.UseSystemPasswordChar = false;
                 TxtPassword.ForeColor = Color.Gray;
             }
-            TxtUser.ForeColor = Color.White;
+            TxtUser.ForeColor = Color.Black;
             if (TxtUser.Text == "username")
             {
                 TxtUser.Text = string.Empty;
@@ -57,7 +57,7 @@ namespace UTB
                 TxtUser.Text = "username";
             }
             TxtPassword.UseSystemPasswordChar = true;
-            TxtPassword.ForeColor = Color.White;
+            TxtPassword.ForeColor = Color.Black;
             if (TxtPassword.Text == "password")
             {
                 TxtPassword.Text = string.Empty;
@@ -70,12 +70,12 @@ namespace UTB
 
         private void TxtUser_KeyPress(object sender, KeyPressEventArgs e)
         {
-            TxtUser.ForeColor = Color.White;
+            TxtUser.ForeColor = Color.Black;
         }
 
         private void TxtPassword_TextChanged(object sender, EventArgs e)
         {
-            TxtPassword.ForeColor = Color.White;
+            TxtPassword.ForeColor = Color.Black;
         }
 
         private void LblRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
