@@ -41,6 +41,7 @@
             this.PnlRight = new System.Windows.Forms.Panel();
             this.PnlLeft = new System.Windows.Forms.Panel();
             this.PnlBottom = new System.Windows.Forms.Panel();
+            this.LblMail = new System.Windows.Forms.Label();
             this.PnlRegistration.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,6 +106,7 @@
             // PnlRegistration
             // 
             this.PnlRegistration.BackColor = System.Drawing.Color.White;
+            this.PnlRegistration.Controls.Add(this.LblMail);
             this.PnlRegistration.Controls.Add(this.LblNoInfo);
             this.PnlRegistration.Controls.Add(this.LblError);
             this.PnlRegistration.Controls.Add(this.BttRegister);
@@ -209,6 +211,18 @@
             this.PnlBottom.Size = new System.Drawing.Size(346, 175);
             this.PnlBottom.TabIndex = 9;
             // 
+            // LblMail
+            // 
+            this.LblMail.AutoSize = true;
+            this.LblMail.BackColor = System.Drawing.Color.Red;
+            this.LblMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMail.ForeColor = System.Drawing.Color.Black;
+            this.LblMail.Location = new System.Drawing.Point(265, 406);
+            this.LblMail.Name = "LblMail";
+            this.LblMail.Size = new System.Drawing.Size(213, 33);
+            this.LblMail.TabIndex = 10;
+            this.LblMail.Text = "Correo Invalido";
+            // 
             // FrmRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,5 +259,6 @@
         private System.Windows.Forms.Button BttRegister;
         private System.Windows.Forms.Button BttReturn;
         private System.Windows.Forms.Label LblNoInfo;
+        private System.Windows.Forms.Label LblMail;
     }
 }

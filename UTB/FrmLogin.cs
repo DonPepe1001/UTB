@@ -76,6 +76,7 @@ namespace UTB
         private void TxtPassword_TextChanged(object sender, EventArgs e)
         {
             TxtPassword.ForeColor = Color.Black;
+            TxtPassword.UseSystemPasswordChar = true;
         }
 
         private void LblRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

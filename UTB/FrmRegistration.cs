@@ -18,6 +18,7 @@ namespace UTB
             InitializeComponent();
             LblError.Hide();
             LblNoInfo.Hide();
+            LblMail.Hide();
         }
 
         private void TxtUsername_TextChanged(object sender, EventArgs e)
@@ -42,7 +43,9 @@ namespace UTB
             }
             if (!this.TxtEmail.Text.Contains('@') || !this.TxtEmail.Text.Contains('.'))
             {
-                MessageBox.Show("Please Enter A Valid Email", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                LblMail.Show();
+                await Task.Delay(2000);
+                LblMail.Hide();
             }
             if (TxtPassword.Text == TxtConfirmPassword.Text)
             {
