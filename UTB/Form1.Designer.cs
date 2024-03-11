@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUTB));
             this.PnlTopBar = new System.Windows.Forms.Panel();
+            this.BttClear = new System.Windows.Forms.Button();
             this.PctLogoChat = new System.Windows.Forms.PictureBox();
             this.LblUsername = new System.Windows.Forms.Label();
             this.BttClose = new System.Windows.Forms.Button();
@@ -38,7 +39,6 @@
             this.TxtMessage = new System.Windows.Forms.TextBox();
             this.PnlConversation = new System.Windows.Forms.Panel();
             this.LstConversation = new System.Windows.Forms.ListBox();
-            this.BttClear = new System.Windows.Forms.Button();
             this.PnlTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctLogoChat)).BeginInit();
             this.PnlMessage.SuspendLayout();
@@ -58,6 +58,20 @@
             this.PnlTopBar.Name = "PnlTopBar";
             this.PnlTopBar.Size = new System.Drawing.Size(778, 120);
             this.PnlTopBar.TabIndex = 0;
+            // 
+            // BttClear
+            // 
+            this.BttClear.BackColor = System.Drawing.Color.White;
+            this.BttClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BttClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BttClear.ForeColor = System.Drawing.Color.Black;
+            this.BttClear.Location = new System.Drawing.Point(691, 52);
+            this.BttClear.Name = "BttClear";
+            this.BttClear.Size = new System.Drawing.Size(75, 23);
+            this.BttClear.TabIndex = 5;
+            this.BttClear.Text = "Clear Chat";
+            this.BttClear.UseVisualStyleBackColor = false;
+            this.BttClear.Click += new System.EventHandler(this.BttClear_Click);
             // 
             // PctLogoChat
             // 
@@ -83,6 +97,7 @@
             // 
             this.BttClose.BackColor = System.Drawing.Color.White;
             this.BttClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BttClose.ForeColor = System.Drawing.Color.Black;
             this.BttClose.Location = new System.Drawing.Point(750, 12);
             this.BttClose.Name = "BttClose";
             this.BttClose.Size = new System.Drawing.Size(20, 20);
@@ -93,7 +108,7 @@
             // 
             // PnlMessage
             // 
-            this.PnlMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(8)))), ((int)(((byte)(115)))));
+            this.PnlMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(49)))), ((int)(((byte)(89)))));
             this.PnlMessage.Controls.Add(this.BttSendMessage);
             this.PnlMessage.Controls.Add(this.TxtMessage);
             this.PnlMessage.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -104,17 +119,19 @@
             // 
             // BttSendMessage
             // 
+            this.BttSendMessage.BackColor = System.Drawing.Color.White;
             this.BttSendMessage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.BttSendMessage.Cursor = System.Windows.Forms.Cursors.Default;
             this.BttSendMessage.FlatAppearance.BorderSize = 12;
             this.BttSendMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BttSendMessage.ForeColor = System.Drawing.Color.Black;
             this.BttSendMessage.Location = new System.Drawing.Point(641, 38);
             this.BttSendMessage.Name = "BttSendMessage";
             this.BttSendMessage.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BttSendMessage.Size = new System.Drawing.Size(78, 45);
             this.BttSendMessage.TabIndex = 1;
             this.BttSendMessage.Text = "Send";
-            this.BttSendMessage.UseVisualStyleBackColor = true;
+            this.BttSendMessage.UseVisualStyleBackColor = false;
             this.BttSendMessage.Click += new System.EventHandler(this.BttSendMessage_Click);
             // 
             // TxtMessage
@@ -151,19 +168,6 @@
             this.LstConversation.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.LstConversation.Size = new System.Drawing.Size(754, 862);
             this.LstConversation.TabIndex = 1;
-            // 
-            // BttClear
-            // 
-            this.BttClear.BackColor = System.Drawing.Color.White;
-            this.BttClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BttClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BttClear.Location = new System.Drawing.Point(691, 52);
-            this.BttClear.Name = "BttClear";
-            this.BttClear.Size = new System.Drawing.Size(75, 23);
-            this.BttClear.TabIndex = 5;
-            this.BttClear.Text = "Clear Chat";
-            this.BttClear.UseVisualStyleBackColor = false;
-            this.BttClear.Click += new System.EventHandler(this.BttClear_Click);
             // 
             // FrmUTB
             // 

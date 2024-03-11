@@ -19,8 +19,8 @@ namespace UTB
         }
         private async void BttLogin_Click(object sender, EventArgs e)
         {
-            if (TxtPassword.Text == "12345")
-            {
+            if (TxtPassword.Text == "12345" && TxtUser.Text != "username" && TxtUser.Text != string.Empty)
+            {   
                 FrmUTB frmUTB = new FrmUTB();
                 frmUTB.Username = Username;
                 this.Hide();
@@ -42,12 +42,11 @@ namespace UTB
                 TxtPassword.UseSystemPasswordChar = false;
                 TxtPassword.ForeColor = Color.Gray;
             }
-            TxtUser.ForeColor = Color.Black;
+            TxtUser.ForeColor = Color.White;
             if (TxtUser.Text == "username")
             {
                 TxtUser.Text = string.Empty;
             }
-
         }
 
         private void TxtPassword_MouseClick(object sender, MouseEventArgs e)
@@ -58,7 +57,7 @@ namespace UTB
                 TxtUser.Text = "username";
             }
             TxtPassword.UseSystemPasswordChar = true;
-            TxtPassword.ForeColor = Color.Black;
+            TxtPassword.ForeColor = Color.White;
             if (TxtPassword.Text == "password")
             {
                 TxtPassword.Text = string.Empty;
@@ -71,12 +70,19 @@ namespace UTB
 
         private void TxtUser_KeyPress(object sender, KeyPressEventArgs e)
         {
-            TxtUser.ForeColor = Color.Black;
+            TxtUser.ForeColor = Color.White;
         }
 
         private void TxtPassword_TextChanged(object sender, EventArgs e)
         {
-            TxtPassword.ForeColor = Color.Black;
+            TxtPassword.ForeColor = Color.White;
+        }
+
+        private void LblRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmRegistration frmRegistration = new FrmRegistration();
+            this.Hide();
+            frmRegistration.Show();
         }
     }
 }

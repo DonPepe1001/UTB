@@ -44,8 +44,9 @@ namespace UTB
                 int randomnoun = rndnoun.Next(noun.Length);
                 int randomverb = rndverb.Next(verb.Length);
                 int randompreposition = rndpreposition.Next(preposition.Length);
-                LstConversation.Items.Add(String.Format(DateTime.Now.ToShortTimeString() + " || UBT : {0} {1} {2} {3}", article[randomarticle], noun[randomnoun], verb[randomverb], preposition[randompreposition]));
+                LstConversation.Items.Add(String.Format(DateTime.Now.ToShortTimeString() + " || UTB : {0} {1} {2} {3}", article[randomarticle], noun[randomnoun], verb[randomverb], preposition[randompreposition]));
             }
+            
         }
         public string Username
         {

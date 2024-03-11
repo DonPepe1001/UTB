@@ -34,6 +34,7 @@
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.BttLogin = new System.Windows.Forms.Button();
             this.LblError = new System.Windows.Forms.Label();
+            this.LblRegister = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PctLogoLogin)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,6 +50,8 @@
             // 
             // TxtUser
             // 
+            this.TxtUser.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.TxtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtUser.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.TxtUser.Location = new System.Drawing.Point(199, 530);
@@ -63,6 +66,8 @@
             // 
             // TxtPassword
             // 
+            this.TxtPassword.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.TxtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPassword.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.TxtPassword.Location = new System.Drawing.Point(199, 565);
@@ -80,8 +85,10 @@
             this.BttLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.BttLogin.BackColor = System.Drawing.Color.White;
+            this.BttLogin.BackColor = System.Drawing.SystemColors.HotTrack;
             this.BttLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BttLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BttLogin.ForeColor = System.Drawing.Color.White;
             this.BttLogin.Location = new System.Drawing.Point(335, 709);
             this.BttLogin.Name = "BttLogin";
             this.BttLogin.Size = new System.Drawing.Size(75, 35);
@@ -94,12 +101,26 @@
             // 
             this.LblError.AutoSize = true;
             this.LblError.BackColor = System.Drawing.Color.Red;
-            this.LblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblError.Location = new System.Drawing.Point(172, 654);
+            this.LblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblError.ForeColor = System.Drawing.Color.Black;
+            this.LblError.Location = new System.Drawing.Point(145, 628);
             this.LblError.Name = "LblError";
-            this.LblError.Size = new System.Drawing.Size(405, 33);
+            this.LblError.Size = new System.Drawing.Size(449, 37);
             this.LblError.TabIndex = 4;
             this.LblError.Text = "Wrong password or username";
+            // 
+            // LblRegister
+            // 
+            this.LblRegister.AutoSize = true;
+            this.LblRegister.LinkColor = System.Drawing.Color.White;
+            this.LblRegister.Location = new System.Drawing.Point(350, 759);
+            this.LblRegister.Name = "LblRegister";
+            this.LblRegister.Size = new System.Drawing.Size(46, 13);
+            this.LblRegister.TabIndex = 5;
+            this.LblRegister.TabStop = true;
+            this.LblRegister.Text = "Register";
+            this.LblRegister.VisitedLinkColor = System.Drawing.Color.White;
+            this.LblRegister.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblRegister_LinkClicked);
             // 
             // FrmLogin
             // 
@@ -108,6 +129,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(49)))), ((int)(((byte)(89)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(762, 1100);
+            this.Controls.Add(this.LblRegister);
             this.Controls.Add(this.LblError);
             this.Controls.Add(this.BttLogin);
             this.Controls.Add(this.TxtPassword);
@@ -130,5 +152,6 @@
         private System.Windows.Forms.TextBox TxtPassword;
         private System.Windows.Forms.Button BttLogin;
         private System.Windows.Forms.Label LblError;
+        private System.Windows.Forms.LinkLabel LblRegister;
     }
 }

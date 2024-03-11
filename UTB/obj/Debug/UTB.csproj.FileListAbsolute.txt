@@ -19,3 +19,15 @@ C:\Users\emanu\Downloads\aaaa\UTB\UTB\obj\Debug\UTB.csproj.GenerateResource.cach
 C:\Users\emanu\Downloads\aaaa\UTB\UTB\obj\Debug\UTB.csproj.CoreCompileInputs.cache
 C:\Users\emanu\Downloads\aaaa\UTB\UTB\obj\Debug\UTB.exe
 C:\Users\emanu\Downloads\aaaa\UTB\UTB\obj\Debug\UTB.pdb
+C:\PV\UTB\UTB\bin\Debug\UTB.exe.config
+C:\PV\UTB\UTB\bin\Debug\UTB.exe
+C:\PV\UTB\UTB\bin\Debug\UTB.pdb
+C:\PV\UTB\UTB\obj\Debug\UTB.csproj.AssemblyReference.cache
+C:\PV\UTB\UTB\obj\Debug\UTB.FrmUTB.resources
+C:\PV\UTB\UTB\obj\Debug\UTB.FrmLogin.resources
+C:\PV\UTB\UTB\obj\Debug\UTB.Properties.Resources.resources
+C:\PV\UTB\UTB\obj\Debug\UTB.csproj.GenerateResource.cache
+C:\PV\UTB\UTB\obj\Debug\UTB.csproj.CoreCompileInputs.cache
+C:\PV\UTB\UTB\obj\Debug\UTB.exe
+C:\PV\UTB\UTB\obj\Debug\UTB.pdb
+C:\PV\UTB\UTB\obj\Debug\UTB.FrmRegistration.resources
