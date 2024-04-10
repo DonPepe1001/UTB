@@ -31,3 +31,21 @@ C:\PV\UTB\UTB\obj\Debug\UTB.csproj.CoreCompileInputs.cache
 C:\PV\UTB\UTB\obj\Debug\UTB.exe
 C:\PV\UTB\UTB\obj\Debug\UTB.pdb
 C:\PV\UTB\UTB\obj\Debug\UTB.FrmRegistration.resources
+D:\Nueva carpeta\UTB\bin\Debug\UTB.exe.config
+D:\Nueva carpeta\UTB\bin\Debug\UTB.exe
+D:\Nueva carpeta\UTB\bin\Debug\UTB.pdb
+D:\Nueva carpeta\UTB\bin\Debug\EntityFramework.dll
+D:\Nueva carpeta\UTB\bin\Debug\EntityFramework.SqlServer.dll
+D:\Nueva carpeta\UTB\bin\Debug\EntityFramework.xml
+D:\Nueva carpeta\UTB\bin\Debug\EntityFramework.SqlServer.xml
+D:\Nueva carpeta\UTB\obj\Debug\UTB.csproj.AssemblyReference.cache
+D:\Nueva carpeta\UTB\obj\Debug\UTB.FrmUTB.resources
+D:\Nueva carpeta\UTB\obj\Debug\UTB.FrmLogin.resources
+D:\Nueva carpeta\UTB\obj\Debug\UTB.FrmRegistration.resources
+D:\Nueva carpeta\UTB\obj\Debug\UTB.Properties.Resources.resources
+D:\Nueva carpeta\UTB\obj\Debug\UTB.csproj.GenerateResource.cache
+D:\Nueva carpeta\UTB\obj\Debug\UTB.csproj.CoreCompileInputs.cache
+D:\Nueva carpeta\UTB\obj\Debug\UTB.csproj.CopyComplete
+D:\Nueva carpeta\UTB\obj\Debug\UTB.exe
+D:\Nueva carpeta\UTB\obj\Debug\UTB.pdb
+D:\Nueva carpeta\UTB\obj\Debug\UTB.Migrations.Initial.resources
