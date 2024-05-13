@@ -3,43 +3,52 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace UTB.Data_Entities
 {
     public class User
     {
-        public int userId { get; set; }
-        public string username { get; set; }
-        public string password { get; set; }
-        public string email { get; set; }
+        [Key]
+        public int UserId { get; set; }
+        [Required]
+        [StringLength(50)]
+        public string Username { get; set; }
+        [Required]
+        [StringLength(100)]
+        public string Password { get; set; }
+        [Required]
+        [StringLength(50)]
+        public string Email { get; set; }
+
         public int GetuserId()
         {
-            return userId;
+            return UserId;
         }
 
         public void SetUserId(int userId)
         {
-            this.userId = userId;
+            this.UserId = userId;
         }
 
         public string GetUsername()
         {
-            return username;
+            return Username;
         }
 
         public void SetUsername(string nickname)
         {
-            this.username = nickname;
+            this.Username = nickname;
         }
 
         public string GetPassword()
         {
-            return password;
+            return Password;
         }
 
         public void SetPassword(string password)
         {
-            this.password = password;
+            this.Password = password;
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace UTB
 {
     public partial class FrmRegistration : Form
     {
+        SqlConnection connect = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=UTBData;Integrated Security=True;Connect Timeout=30;Encrypt=False");
         public FrmRegistration()
         {
             InitializeComponent();
@@ -53,6 +55,23 @@ namespace UTB
             }
             if (passwordMatch == true && TxtUsername.Text != "username" && TxtUsername.Text != string.Empty && TxtEmail.Text != "e-mail" && TxtEmail.Text != string.Empty && this.TxtEmail.Text.Contains('@') && this.TxtEmail.Text.Contains('.'))
             {
+                connect.Open();
+                String checkUsername = "SELECT * FROM admin WHERE username = '";
+
+                using (SqlCommand checkUser = new SqlCommand(checkUsername, connect))
+                {
+                    string insertData = "INSERT INTO Users (Username, Password, Email)" +
+                        "VALUES(@Username, @Password, @Email)";
+
+                    using (SqlCommand cmd = new SqlCommand(insertData, connect))
+                    {
+                        cmd.Parameters.AddWithValue("@Username", TxtUsername.Text);
+                        cmd.Parameters.AddWithValue("@Password", TxtPassword.Text);
+                        cmd.Parameters.AddWithValue("@Email", TxtEmail.Text);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
                 FrmUTB frmUTB = new FrmUTB();
                 frmUTB.Username = Username;
                 this.Hide();

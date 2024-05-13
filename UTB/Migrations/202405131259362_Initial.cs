@@ -55,12 +55,12 @@
                 "dbo.Users",
                 c => new
                     {
-                        userId = c.Int(nullable: false, identity: true),
-                        username = c.String(),
-                        password = c.String(),
-                        email = c.String(),
+                        UserId = c.Int(nullable: false, identity: true),
+                        Username = c.String(nullable: false, maxLength: 50),
+                        Password = c.String(nullable: false, maxLength: 100),
+                        Email = c.String(nullable: false, maxLength: 50),
                     })
-                .PrimaryKey(t => t.userId);
+                .PrimaryKey(t => t.UserId);
             
         }
         

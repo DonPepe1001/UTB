@@ -49,3 +49,10 @@ D:\Nueva carpeta\UTB\obj\Debug\UTB.csproj.CopyComplete
 D:\Nueva carpeta\UTB\obj\Debug\UTB.exe
 D:\Nueva carpeta\UTB\obj\Debug\UTB.pdb
 D:\Nueva carpeta\UTB\obj\Debug\UTB.Migrations.Initial.resources
+C:\Users\emanu\Downloads\aaaa\UTB\UTB\bin\Debug\EntityFramework.dll
+C:\Users\emanu\Downloads\aaaa\UTB\UTB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\emanu\Downloads\aaaa\UTB\UTB\bin\Debug\EntityFramework.xml
+C:\Users\emanu\Downloads\aaaa\UTB\UTB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\emanu\Downloads\aaaa\UTB\UTB\obj\Debug\UTB.FrmRegistration.resources
+C:\Users\emanu\Downloads\aaaa\UTB\UTB\obj\Debug\UTB.csproj.Up2Date
+C:\Users\emanu\Downloads\aaaa\UTB\UTB\obj\Debug\UTB.Migrations.Initial.resources

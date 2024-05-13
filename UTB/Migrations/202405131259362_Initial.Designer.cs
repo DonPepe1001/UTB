@@ -13,7 +13,7 @@ namespace UTB.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202404101441347_Initial"; }
+            get { return "202405131259362_Initial"; }
         }
         
         string IMigrationMetadata.Source
